@@ -2,19 +2,24 @@
     display: flex
     flex-direction: column
     justify-content: center
-    max-width: 1440px
+    max-width: 1026px
+    margin: 0 auto
     background: white
     font-family: 'Work Sans', sans-serif;
+    border: 4px solid SeaGreen
+    box-sizing: border-box
     a
         text-decoration: none
         color: green
-    .content
-        max-width: 60%
-        margin: 0 auto
-        border: 4px solid SeaGreen
+        transition: color 0.7s
+    a:hover 
+        color: #5d7260
+    
     nav
         display: flex
         justify-content: space-between
+        font-size: 24px
+        flex-wrap: wrap
         .logo
             padding-top: 1%
             color: SeaGreen
@@ -22,17 +27,18 @@
             padding-left: 3%
             font-family: 'Shizuru', cursive
 
-    .list
-        min-width: 70%
-        display: flex
-        justify-content: space-around
-        list-style-type: none
+        .list
+            min-width: 90%
+            display: flex
+            justify-content: space-around
+            list-style-type: none
+
     .item
-        list-style-type: none 
-        font-size: 24px
         font-family: 'Yuji Hentaigana Akebono', cursive
+       
     li
         list-style-type: none 
+       
     h1, h2, h3
         font-family: 'Work Sans', sans-serif;
     h1
@@ -80,13 +86,41 @@ footer
     display: flex
     justify-content: space-between
     background:#DCDCDC
+    align-items: center
     .footer_img
         width: 90px
         height: 90px
     .footer_item_rss
         padding-right: 1%
-    .footer_item_year
-        padding-top: 4%
+
+@media (max-width: 808px)
+    .container
+        border: 8px solid SeaGreen
+        font-size: 20px
+        nav
+            font-size: 20px
+        .myphoto
+            flex-direction: column-reverse
+            justify-content: center
+            .photo
+                width: 35%
+                height: 35%
+                padding-top: 2%
+                padding-left: 33%
+            h1
+                padding-left: 32%
+            h2
+                padding-left: 37%
+            h3
+                padding-left: 6%
+                font-size: 25px
+
+
+
+
+    
+
+
 
         
 
